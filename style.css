@@ -1,0 +1,508 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic&family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+  /* Colors */
+  --brand-yellow: #fdc435;
+  --bg-gray: #f9faff;
+  --bg-white: #ffffff;
+  --bg-line: #25282b;
+  --font-high-emphasis: #25282b;
+  --font-medium-emphasis: #828282;
+  --font-low-emphasis: #9a9fa8;
+
+  /* Fonts */
+  --title-h-1: 700 64px/120% "Playfair Display", sans-serif;
+  --title-h-2: 700 48px/72px "Playfair Display", sans-serif;
+  --body-24-px: 400 24px/36px "Nunito", sans-serif;
+  --body-18-px: 500 18px/28px "Raleway", sans-serif;
+
+  /* Effects */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar,
+.navbar * {
+  box-sizing: border-box;
+}
+.navbar {
+  padding: 12px 120px 12px 120px;
+  height: 56px;
+  position: relative;
+}
+.logo {
+  color: var(--font-high-emphasis, #25282b);
+  text-align: left;
+  font: 700 18px/180% "Comfortaa", sans-serif;
+  position: absolute;
+  left: 120px;
+  top: 12px;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 120px;
+  top: 14px;
+}
+.tab-default {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.sobre {
+  color: var(--font-high-emphasis, #25282b);
+  text-align: left;
+  font: var(--body-18-px, 500 18px/28px "Raleway", sans-serif);
+  position: relative;
+}
+/* End of Navbar */
+
+/* Intro */
+.intro,
+.intro * {
+  box-sizing: border-box;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1108px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.title {
+  color: var(--font-high-emphasis, #25282b);
+  text-align: left;
+  font: var(--title-h-1, 700 64px/120% "Playfair Display", sans-serif);
+  position: relative;
+  width: 486px;
+}
+.subheadline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.subheadline .text {
+  color: var(--font-medium-emphasis, #828282);
+  text-align: left;
+  font: 400 24px/150% "Nunito", sans-serif;
+  position: relative;
+  width: 486px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.button-primary {
+  background: var(--brand-yellow, #fdc435);
+  border-radius: 8px;
+  padding: 8px 24px 8px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.buttons .text2 {
+  color: var(--font-high-emphasis, #25282b);
+  text-align: left;
+  font: 500 18px/150% "Roboto", sans-serif;
+  position: relative;
+}
+.button-secondary {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: var(--bg-line, #25282b);
+  border-width: 2px;
+  padding: 8px 24px 8px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.intro-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+/* End of Intro */
+
+.container {
+  max-width: 1108px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Portfolio */
+.projects,
+.projects * {
+  box-sizing: border-box;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-top: 300px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.frame-3351 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.text {
+  color: var(--font-high-emphasis, #25282b);
+  text-align: center;
+  font: var(--title-h-2, 700 48px/72px "Playfair Display", sans-serif);
+  position: relative;
+}
+.rectangle-19 {
+  background: var(--brand-yellow, #fdc435);
+  border-radius: 2px;
+  flex-shrink: 0;
+  width: 100px;
+  height: 4px;
+  position: relative;
+}
+.project-1 {
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 992px;
+  height: 524px;
+  position: relative;
+  box-shadow: 0px 6px 64px 0px rgba(112, 144, 176, 0.1);
+  overflow: hidden;
+}
+.project-nfo {
+  background: var(--bg-white, #ffffff);
+  flex-shrink: 0;
+  width: 496px;
+  height: 524px;
+  position: relative;
+}
+.frame-3350 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 406.68px;
+  position: absolute;
+  left: 50.44px;
+  top: 207px;
+}
+.text2 {
+  color: var(--font-high-emphasis, #25282b);
+  text-align: left;
+  font: 700 40px/150% "Playfair Display", sans-serif;
+  position: relative;
+  align-self: stretch;
+}
+.text3 {
+  color: var(--font-medium-emphasis, #828282);
+  text-align: left;
+  font: 400 18px/150% "Nunito", sans-serif;
+  position: relative;
+  align-self: stretch;
+}
+.pexels-elly-fairytale-3823207-1 {
+  flex-shrink: 0;
+  width: 496px;
+  height: 526px;
+  position: relative;
+}
+.project-2 {
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 992px;
+  height: 524px;
+  position: relative;
+  box-shadow: 0px 6px 64px 0px rgba(112, 144, 176, 0.1);
+  overflow: hidden;
+}
+.rectangle-7 {
+  flex-shrink: 0;
+  width: 496px;
+  height: 524px;
+  position: relative;
+}
+.frame-33502 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 406.68px;
+  position: absolute;
+  left: 50.44px;
+  top: 180px;
+}
+.project-3 {
+  border-radius: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 524px;
+  position: relative;
+  box-shadow: 0px 6px 64px 0px rgba(112, 144, 176, 0.1);
+  overflow: hidden;
+}
+.frame-33503 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 406.68px;
+  position: absolute;
+  left: 50.44px;
+  top: 136.5px;
+}
+/* End of Portfolio */
+
+
+/* Contact */
+.contact,
+.contact * {
+  box-sizing: border-box;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  margin-top: 100px;
+}
+.frame-3351 {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.text {
+  color: var(--font-high-emphasis, #25282b);
+  text-align: center;
+  font: var(--title-h-2, 700 48px/72px "Playfair Display", sans-serif);
+  position: relative;
+}
+.rectangle-19 {
+  background: var(--brand-yellow, #fdc435);
+  border-radius: 2px;
+  flex-shrink: 0;
+  width: 100px;
+  height: 4px;
+  position: relative;
+}
+.frame-3353 {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.property-1-default {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.vector {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.fathil-aziz-muza {
+  color: #000000;
+  text-align: left;
+  font: var(--body-18-px, 500 18px/28px "Raleway", sans-serif);
+  position: relative;
+}
+.property-1-variant-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.vector2 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.wanheda-okumura {
+  color: #000000;
+  text-align: left;
+  font: var(--body-18-px, 500 18px/28px "Raleway", sans-serif);
+  position: relative;
+}
+.property-1-variant-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.vector3 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+.wanhedaokumura-gmail-com {
+  color: #000000;
+  text-align: left;
+  font: var(--body-18-px, 500 18px/28px "Raleway", sans-serif);
+  position: relative;
+}
+.property-1-variant-4 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.vector4 {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+._62-813-3793-3537 {
+  color: #000000;
+  text-align: left;
+  font: var(--body-18-px, 500 18px/28px "Raleway", sans-serif);
+  position: relative;
+}
+
+/* End of contact */
+
+/* Footer */
+.footer,
+.footer * {
+  box-sizing: border-box;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+.fathil-muza {
+  color: var(--font-low-emphasis, #9a9fa8);
+  text-align: left;
+  font: var(--body-18-px, 500 18px/28px "Raleway", sans-serif);
+  position: relative;
+}
+.vector {
+  flex-shrink: 0;
+  position: relative;
+  overflow: visible;
+}
+._2023-all-right-reverse {
+  color: var(--font-low-emphasis, #9a9fa8);
+  text-align: left;
+  font: var(--body-18-px, 500 18px/28px "Raleway", sans-serif);
+  position: relative;
+}
+/* end of footer */
